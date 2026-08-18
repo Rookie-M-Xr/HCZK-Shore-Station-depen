@@ -1,0 +1,12 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+*.user
+*.user.*
+.vs/
+.idea/
+
+# Don't ignore prebuilt libraries; they are the point of this repo.
