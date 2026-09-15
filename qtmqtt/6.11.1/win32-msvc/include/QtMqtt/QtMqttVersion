@@ -1,0 +1,1 @@
+#include <QtMqtt/qtmqttversion.h> // IWYU pragma: export

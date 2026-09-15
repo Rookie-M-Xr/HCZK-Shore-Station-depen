@@ -1,0 +1,16 @@
+#ifndef QT_QTMQTT_MODULE_H
+#define QT_QTMQTT_MODULE_H
+#include <QtMqtt/QtMqttDepends>
+#include <QtMqtt/qmqttglobal.h>
+#include <QtMqtt/qmqttauthenticationproperties.h>
+#include <QtMqtt/qmqttclient.h>
+#include <QtMqtt/qmqttconnectionproperties.h>
+#include <QtMqtt/qmqttmessage.h>
+#include <QtMqtt/qmqttpublishproperties.h>
+#include <QtMqtt/qmqttsubscription.h>
+#include <QtMqtt/qmqttsubscriptionproperties.h>
+#include <QtMqtt/qmqtttopicfilter.h>
+#include <QtMqtt/qmqtttopicname.h>
+#include <QtMqtt/qmqtttype.h>
+#include <QtMqtt/qtmqttversion.h>
+#endif
