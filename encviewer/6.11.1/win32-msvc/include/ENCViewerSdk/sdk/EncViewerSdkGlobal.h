@@ -1,0 +1,11 @@
+#pragma once
+
+#include <QtGlobal>
+
+#if defined(ENCVIEWER_SDK_BUILD_SHARED)
+#define ENCVIEWER_SDK_EXPORT Q_DECL_EXPORT
+#elif defined(ENCVIEWER_SDK_USE_SHARED)
+#define ENCVIEWER_SDK_EXPORT Q_DECL_IMPORT
+#else
+#define ENCVIEWER_SDK_EXPORT
+#endif

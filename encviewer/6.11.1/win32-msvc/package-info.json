@@ -1,0 +1,17 @@
+{
+  "sdkVersion": "1.10.159",
+  "qtVersion": "6.11.1",
+  "kit": "msvc2022_64",
+  "compilerVersion": "19.44.35221.0",
+  "architecture": "x64",
+  "configuration": "Release",
+  "createdUtc": "2026-09-22T08:44:39.1598967Z",
+  "publicHeaderCount": 71,
+  "headerCheck": "passed",
+  "examplesCompileAndLink": "passed",
+  "isolatedRuntimeSmoke": "passed",
+  "encImportSmoke": "not requested",
+  "visualValidation": "not performed",
+  "gdalProj": "static",
+  "s52GdalData": "embedded"
+}

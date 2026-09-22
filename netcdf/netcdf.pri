@@ -1,9 +1,11 @@
-# netCDF-C（仅 MSVC Release，与 ENC SDK 同一工具链）。
-# 默认路径：仓库旁 ../../WeatherLib/netCDF4.9.3
-# 可用 NETCDF_ROOT 覆盖。只链 netcdf/hdf5，不链 WeatherLib。
+# netCDF-C 4.9.3（仅 MSVC Release）。
+# 默认：depen/netcdf/4.9.3/<qmake-spec>/
+# 可用 NETCDF_ROOT 覆盖。只链 netcdf，运行时再带 hdf5 / zlib / libcurl。
+
+isEmpty(DEPEN_KIT_PRI_LOADED): include($$PWD/../kit.pri)
 
 isEmpty(NETCDF_ROOT) {
-    NETCDF_ROOT = $$clean_path($$PROJECT_ROOT/../../WeatherLib/netCDF4.9.3)
+    NETCDF_ROOT = $$clean_path($$PWD/4.9.3/$$[QMAKE_XSPEC])
 }
 
 NETCDF_LIB = $$NETCDF_ROOT/lib/netcdf.lib

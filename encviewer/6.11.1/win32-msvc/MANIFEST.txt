@@ -1,0 +1,8 @@
+qt=6.11.1
+spec=win32-msvc
+module=ENCViewerSdk
+kind=shared
+version=1.10.159
+configuration=Release
+source=D:/HCZK_work/shore_station/SeaMap/qt-6.11.1-msvc2022_64-v1.10.159
+note=headers + import lib + SDK DLL only; host Qt 6.11.1, do not vendor Qt/VC runtimes

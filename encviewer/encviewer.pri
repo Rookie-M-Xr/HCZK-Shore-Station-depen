@@ -1,10 +1,12 @@
-# ENCViewer SDK：SeaMap 预编译包（Qt 6.11.1 / MSVC 2022 / Release）。
-# 默认路径：仓库旁 ../SeaMap/qt-6.11.1-msvc2022_64
+# ENCViewer SDK 预编译动态库（Qt 6.11.1 / MSVC 2022 / Release）。
+# 默认：depen/encviewer/<Qt版本>/<qmake-spec>/
 # 可用 ENC_SDK_ROOT 覆盖。只拷 SDK DLL，不拷包内 Qt（与本机套件为同一套 6.11.1）。
 # SDK 仅提供 Release 导入库，Debug 不链接，避免混用 Qt6Cored / MD-MDd。
 
+isEmpty(DEPEN_KIT_PRI_LOADED): include($$PWD/../kit.pri)
+
 isEmpty(ENC_SDK_ROOT) {
-    ENC_SDK_ROOT = $$clean_path($$PROJECT_ROOT/../SeaMap/qt-6.11.1-msvc2022_64)
+    ENC_SDK_ROOT = $$clean_path($$PWD/$$QT_VERSION/$$[QMAKE_XSPEC])
 }
 
 ENC_SDK_LIB = $$ENC_SDK_ROOT/lib/ENCViewerSdk-Qt6-Release.lib
